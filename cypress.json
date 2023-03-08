@@ -1,5 +1,12 @@
 {
     "baseUrl": "http://localhost:3000",
     "viewportWidth": 1440,
-    "viewportHeight": 900
+    "viewportHeight": 900,
+    "dbConfig": {
+        "host": "raja.db.elephantsql.com",
+        "user": "fvnllqyp",
+        "password": "rbgGNvEJqS59ZGlLVxbKL4qgv20yIfwW",
+        "database": "fvnllqyp",
+        "port": 5432
+    }
 }
