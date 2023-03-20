@@ -1,0 +1,23 @@
+{
+    "success":{
+        "name": "César Augusto Resende",
+        "email": "cesaresende@yahoo.com.br",
+        "password": "asdf1234"
+    },
+    "email_double":{
+        "name": "César Augusto Resende",
+        "email": "cesaresende@yahoo.com.br",
+        "password": "asdf1234",
+        "is_provider": true
+    },
+    "email_invalid":{
+        "name": "Elizabeth Olsen",
+        "email": "liza.yahoo.com",
+        "password": "pwd123"
+    },
+    "short_password":{
+        "name": "Jason Friday",
+        "email": "jason@gmail.com",
+        "password": null
+    }
+}
