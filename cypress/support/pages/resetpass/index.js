@@ -12,7 +12,7 @@ class ResetPassPage {
     go(token) {
         cy.visit('/reset-password?token=' + token)
         
-        cy.contain(el.title)
+        cy.contains(el.title)
             .should('be.visible')
     }
 
