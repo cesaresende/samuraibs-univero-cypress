@@ -7,14 +7,14 @@ jobs:
 
   chrome-ui-tests:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome87-ff82
+    container: cypress/browsers:node14.17.0-chrome88-ff89
     strategy:
       fail-fast: false
       matrix:
         containers: [1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         
       - name: Ping API (Fly)
         uses: Leocardoso94/is-my-site-up@v1.2
@@ -25,7 +25,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install-comand: yarn install
-          wait-on: 'https://https://samuraibs-web-cesar.fly.dev'
+          wait-on: 'https://samuraibs-web-cesar.fly.dev'
           wait-on-timeout: 120
           browser: chrome
           record: true
