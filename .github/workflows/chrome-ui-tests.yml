@@ -22,7 +22,7 @@ jobs:
           site: https://samuraibs-web-cesar.fly.dev
 
       - name: 'UI Tests - Chrome'
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v2
         with:
           install-comand: yarn install
           wait-on: 'https://https://samuraibs-web-cesar.fly.dev'
