@@ -7,7 +7,7 @@ jobs:
 
   chrome-ui-tests:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.0-chrome88-ff89
+    container: cypress/browsers:node14.17.6-chrome100-ff98
     strategy:
       fail-fast: false
       matrix:
@@ -31,7 +31,7 @@ jobs:
           record: true
           parallel: true
           group: 'UI - Chrome'
-          spec: cypress/integration/*
+          spec: ${{ github.event.inputs.specs }}
         env:
           TZ: America/Sao_Paulo
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
